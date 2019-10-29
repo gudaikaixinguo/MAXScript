@@ -87,3 +87,11 @@ animate on
     at time 0(foo.pos=[-100,0,0];foo.scale=[1,1,0.25])
     at time 100(foo.pos=[100,0,0];foo.scale=[1,1,5])
 )
+
+
+ 有三种数据类型:1.基本数据类型;2.特殊数据类型;3.高级数据类型
+ 操作符 a==a; a!=b; <value>as<class>将数据转换成指定类型
+方法 print<value>[to:<stream>][#noMap]--将指定的单个<value>打印到Listener窗口或指定的<filestream>，<stringstream>,<windowsstream>中，后跟一个回车符
+<stream>等于(<filestream>|<stringstream>|<windowsstream>)
+方法 format<format_string>{<value>}[to:<stream>]--将指定的一个或多个<value>打印到格式化到Listener窗口或指定的<filestream>，<stringstream>,<windowsstream>中
+format "name:% pos:%\n" obj.name obj.pos

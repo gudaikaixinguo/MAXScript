@@ -77,10 +77,8 @@ rot_obj = eulerAngles 0 30 0 --名为rot_obj的旋转对象，绕y轴旋转30°
 rotation foo rot_obj--把名为rot_obj的旋转对象 应用到foo对象上
 rotate<name_obj>[(x,y,z)]--x,y,z方向各移动的偏移量。
 
-
 addModifier obj_name(modifier_name<parameters>)--添加修改器格式
 addModifier foo (Twist angle:30)
-
 
 animate on 
 (
@@ -94,4 +92,5 @@ animate on
 方法 print<value>[to:<stream>][#noMap]--将指定的单个<value>打印到Listener窗口或指定的<filestream>，<stringstream>,<windowsstream>中，后跟一个回车符
 <stream>等于(<filestream>|<stringstream>|<windowsstream>)
 方法 format<format_string>{<value>}[to:<stream>]--将指定的一个或多个<value>打印到格式化到Listener窗口或指定的<filestream>，<stringstream>,<windowsstream>中
+obj = $Box001
 format "name:% pos:%\n" obj.name obj.pos

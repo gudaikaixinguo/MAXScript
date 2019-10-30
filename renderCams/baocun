@@ -1,0 +1,8 @@
+f = openfile"foo.txt"
+try 
+    while not eof f do read_some_data f 
+catch(
+    messageBox"foo.txt中有问题" --当调用函数read_some_data()过程中发现的任何错误 将被捕捉到，系统将显示一个信息框
+    results = undefined
+)
+close f

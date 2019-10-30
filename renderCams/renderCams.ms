@@ -1,11 +1,12 @@
---未测试成功
 
-loadMaxFile "foo.max"
+path = "C:\\Users\\gudai\\Desktop\\MAXScript\\renderCams"
+loadMaxFile(path+"\\"+ foo.max")
 for i in cameras  do render camera:
-    outputfile:("foo"+i.name + ".jpg")
+    outputfile:(path+"\\"+i.name + ".jpg")
     
-loadMaxFile "baz.max"
+    loadMaxFile(path+"\\"+ baz.max")
 for i in cameras  do render camera:
-    outputfile:("baz"+i.name + ".jpg")
+    outputfile:(path+"\\"+i.name + ".jpg")
+
 quitMax #noPrompt
 

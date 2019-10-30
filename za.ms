@@ -2,6 +2,7 @@ showProperties $ --显示所选的对象的属性
 $ -- 名称标识符
 print "hello" -- 可以不带括号，因为maxScript是弱类型语言
 
+path = "C:\\Users\\gudai\\Desktop\\MAXScript\\renderCams"--不能使用path只读变量，可是使用path_gudai
 
 定义数组有两种方法：
 1. #()

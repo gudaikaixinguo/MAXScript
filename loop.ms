@@ -5,6 +5,9 @@ if<expr1>then<expr2>[else<expr3>]
 
 if<expr1>do<expr2> --do形式的if表达式专门为Listener窗口执行if表达式设计的
 
+
+
+
 --while do 循环
 while<expr>do<expr>--while后面的<expr>为真，将重复执行do后面的<expr>。
 
@@ -13,6 +16,8 @@ while (i>0) do (
     print x
     x+=1
 )
+
+
 
 --do while循环
 do<expr>while<expr>--do循环因为在循环结尾执行while后面的<expr>，所以至少执行一次循环。
@@ -23,6 +28,8 @@ do (
     print x
     x+=1
 ) while (i>0)
+
+
 
 -- for循环
 for<var_name>(in|=)<sequence>(do|collect)<expr>
@@ -39,6 +46,9 @@ for item in [able] do i=i+item.height--打印数组序列
 for t in of to loof by 5f do--以帧为单位的时间序列
 for i in $Box* where i.height>100 collect i--将高度大于100的Box放到数组里
 
+
+
+
 -- continue语句
 用来在for,do,while循环中直接跳至循环末尾，然后开始下一次循环。
 
@@ -49,6 +59,8 @@ for i=1 to 8 do(
         print i
     )
 )
+
+
 
 --eof为当到达为"随机输入"或"顺序输入"打开的文件结尾时，返回一个包含布尔值True的Integer。
 while not eof f do (  --读入文件直到文件结尾
@@ -63,6 +75,9 @@ while not eof f do (  --读入文件直到文件结尾
 如果在一个for collect循环里执行 continue语句，本次循环的表达式结果 将不被收集到数组
 中。如 for i = 1 to 8 collect(if i==5 do continue;i) 
 
+
+
+
 --exit语句
 用来在for,do,while循环中 提前退出循环，即使循环的条件为True。
 exit[with<expr>]--其中可选的with<expr>让用户指定提前退出循环时 循环体的返回值。反之返回值为 undefined
@@ -76,6 +91,8 @@ while x<y do (
     $bar.pos.x = compute_x(bar/foo)
     x+=0.1
 )
+
+
 
 --try 表达式
 一种异常处理机制，try表达式把一段代码放在一对括号中，可以捕捉该代码段里任何错误。
